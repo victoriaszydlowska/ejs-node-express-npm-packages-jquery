@@ -1,0 +1,38 @@
+<%- include("partials/header.ejs") %>
+
+
+<div class="name-question">
+    <h1>What's your name?</h1>
+    <form action="/submit" method="POST" >
+        <label for="fname">First name:</label>
+        <input type="text" name="first-name" placeholder="First name">
+        <input  id="button" type="submit" value="OK">
+      </form>
+    </div>
+      
+        <% if(locals.personName ==="") { %>
+            <h3>Fine. You don't have to tell me your name, Stranger</h3>
+            <% } else if(locals.personName !=="")  { %>
+               <h2>Hello <%=locals.personName%></h2> 
+            <% } %>
+            <div class="hide"> 
+             <h1>Just a good ol' joke for you. </h1>
+            <p><%= locals.joke %> <p>
+            <h4 id="button-background"> Click here to change one of the background colours in the sequence</h4>
+            </div>
+            <div id="second-joke">
+            <h2 > Okay, and if you need a dog name generator. There you go.</h2>
+            <p><%=locals.doggyName.toUpperCase() %></p>
+            <h4> (I know you needed it)</h4>
+            </div>
+            </body>
+            <%- include("partials/footer.ejs") %>
+            <script>
+                $(document).ready(function(){
+                $("#button-background").click(function(){
+                    $(".hide").css("background-color", "yellow");
+                       });   
+                  });
+     
+</script>
+</html>

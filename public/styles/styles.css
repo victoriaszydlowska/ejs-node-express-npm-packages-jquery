@@ -1,0 +1,89 @@
+
+
+body{
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin:0;
+
+}
+
+input {
+    padding:0.4rem 1rem;
+    margin:0rem;
+    border-radius: 10%;
+   
+}
+#show {
+    background-color: lightseagreen;
+    color:white;
+}
+.header-logo { 
+    color: lightsalmon;
+    background-color: white;
+    padding:2vw 8vw;
+    margin:0;
+    margin-bottom: 2vw;
+    animation: animation 5s linear 2s infinite alternate-reverse;
+
+
+}
+
+footer{
+    background-color: gray;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.hide{
+    background-color: lightblue;
+    height: 15rem;
+    padding-top: 3vw;
+    animation: animation-two 6s linear 2s infinite alternate-reverse;
+
+
+}
+
+#second-joke{
+    padding: 2vw 0vw 6vw 0vw;
+    border: 1rem solid;
+    border-color: white;
+    animation: animation-three 4s linear 2s infinite alternate-reverse;
+
+}
+
+#button-background{
+    padding: 3vw 0vw 3vw 0vw;
+}
+
+@keyframes animation {
+    0%   {color:lightblue; }
+    25%  {color:lightskyblue; }
+    50%  {color:lightcyan; }
+    75%  {color:lightseagreen; }
+    100% {color:lightgoldenrodyellow;}
+  }
+
+  @keyframes animation-two {
+    0%   {background-color:lightblue; }
+    50%  {background-color:lightskyblue; }
+}
+
+@keyframes animation-three {
+    0%   {border-color:rgb(224, 251, 255); }
+    50%  {border-color:#f0fbff; }
+}
+  
+
+@media only screen and (max-width: 768px) {
+    h1, h2 {
+    font-size:x-large;
+    }
+  }
+
+
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation4 */
+/* jquery, ejs,bodyparser, node js express js, tutorial */
+/* https://www.npmjs.com/package/jester-jokes */
+/* https://www.npmjs.com/package/doggy-names */
