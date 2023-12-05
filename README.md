@@ -1,4 +1,4 @@
-# EJS, NODE, EXPRESS, NPM packages,JQUERY project.
+# EJS, NODE, EXPRESS, NPM packages, JQUERY project.
 
 Project done using NPM packages, Node.js, Express.js, Body Parser, EJS and JQUERY. Joke generated using  Jester Jokes, Doggy Names NPM packages. <br />
 
